@@ -537,7 +537,10 @@ class Unum(object):
         return self.cast_unit(other)
 
     def __getitem__(self, index):
-        return Unum(self._value[index], self._unit)
+        if isinstance(index, Unum):
+            return self.cast_unit(index)
+        else:
+            return Unum(self._value[index], self._unit)
 
     def __setitem__(self, index, value):
         self._value[index] = Unum.uniform(value).number(self.unit())
