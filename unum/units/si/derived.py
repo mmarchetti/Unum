@@ -29,6 +29,7 @@ __all__ = [
     "Gy",  "GY",
     "Sv",  "SV",
     "kat",  "KAT",
+    "pct", "PCT",
 ]
 
 rad = RAD = new_unit('rad', M / M, 'radian')
@@ -55,3 +56,4 @@ Gy = GY = new_unit('Gy', J / KG, 'gray')
 Sv = SV = new_unit('Sv', J / KG, 'sievert')
 kat = KAT = new_unit('kat', MOL / s, 'katal')
 
+pct = PCT = new_unit('%', M / (100 * M), 'percent')
