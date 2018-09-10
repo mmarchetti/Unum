@@ -533,6 +533,9 @@ class Unum(object):
     def __rpow__(self, other):
         return other.__pow__(self)
 
+    def __or__(self, other):
+        return self.cast_unit(other)
+
     def __getitem__(self, index):
         return Unum(self._value[index], self._unit)
 
