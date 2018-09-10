@@ -536,6 +536,9 @@ class Unum(object):
     def __or__(self, other):
         return self.cast_unit(other)
 
+    def __ror__(self, other):
+        return other.cast_unit(self)
+
     def __getitem__(self, index):
         if isinstance(index, Unum):
             return self.cast_unit(index)
