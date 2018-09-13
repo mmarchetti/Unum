@@ -3,10 +3,6 @@ from ..si.derived import *
 from unum import new_unit
 
 
-__all__ = [
-    'kN', 'MN', 'kNm', 'MNm', 'kNcm', 'kG', 'T', 'kPa', 'MPa', 'GPa'
-]
-
 kN = new_unit('kN', N * 1e3, 'kilonewton')
 MN = new_unit('MN', N * 1e6, 'meganewton')
 
