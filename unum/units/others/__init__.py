@@ -59,5 +59,8 @@ Ci = CI = new_unit('Ci', 3.7E10 * BQ, 'curie')
 R = new_unit('R', 2.58E-4 * C / KG, 'roentgen')
 rem = REM = new_unit('rem', 1E-2 * SV, 'rem')
 
+inch = INCH = new_unit('inch', 25.4 * mm, 'inch')
+
+
 # Note : 'rad' defined as 1E-2 Gy as been left out because it conflits with
 # using 'rad' for radians.

@@ -19,3 +19,5 @@ GPa = new_unit('GPa', Pa * 1e9, 'gigapascal')
 kNm = new_unit('kNm', kN * m, 'kilonewton meter')
 MNm = new_unit('MNm', MN * m, 'meganewton meter')
 kNcm = new_unit('kNcm', kN * cm, 'kilonewton centimeter')
+
+rpm = RPM = new_unit('rpm', 1 / (60 * s), 'revolutions per minute')
