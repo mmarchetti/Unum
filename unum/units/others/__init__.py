@@ -60,6 +60,7 @@ R = new_unit('R', 2.58E-4 * C / KG, 'roentgen')
 rem = REM = new_unit('rem', 1E-2 * SV, 'rem')
 
 inch = INCH = new_unit('inch', 25.4 * mm, 'inch')
+ft = FT = new_unit('ft', 12 * inch, 'foot')
 
 
 # Note : 'rad' defined as 1E-2 Gy as been left out because it conflits with
