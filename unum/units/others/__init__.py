@@ -31,7 +31,8 @@ __all = [
     'b', 'B',
     'Ci', 'CI',
     'R', 'R',
-    'rem', 'REM',
+    'ounce', 'OUNCE',
+    'pound', 'POUND',
 ]
 
 minutes = MIN = new_unit('min', 60 * s, 'minute')
@@ -62,6 +63,8 @@ rem = REM = new_unit('rem', 1E-2 * SV, 'rem')
 inch = INCH = new_unit('inch', 25.4 * mm, 'inch')
 ft = FT = new_unit('ft', 12 * inch, 'foot')
 
+oz = ounce = OUNCE = new_unit('oz', 28.35 * g, 'ounce')
+lb = pound = POUND = new_unit('lb', 16 * oz, 'pound')
 
 # Note : 'rad' defined as 1E-2 Gy as been left out because it conflits with
 # using 'rad' for radians.
